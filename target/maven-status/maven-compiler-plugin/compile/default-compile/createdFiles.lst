@@ -1,0 +1,6 @@
+edu\dalhousie\business\registration\database\IGetUSer.class
+edu\dalhousie\business\courseregistration\controller\IRegisteredCourseListView.class
+edu\dalhousie\business\registration\database\GetUser.class
+edu\dalhousie\business\registration\database\IAddMembership.class
+edu\dalhousie\business\registration\database\AddMembership.class
+edu\dalhousie\business\courseregistration\controller\RegisteredCourseListView.class
