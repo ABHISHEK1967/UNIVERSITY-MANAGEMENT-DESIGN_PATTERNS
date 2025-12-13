@@ -33,17 +33,34 @@ This system follows principles used in large-scale backend systems:
 ## 🏗️ High-Level System Architecture (Mermaid)
 ``` mermaid
 flowchart TB
-    UI[Client / UI Layer (Web / CLI / API Consumer)]
-    Controller[Controller Layer (Request Handling)]
-    Service[Service Layer (Business Logic)]
-    Domain[Domain Models (Student | Professor | Course | Enrollment)]
-    Factory[Factory Pattern (Object Creation)]
-    Strategy[Strategy Pattern (Business Rules)]
-    Singleton[Singleton Pattern (Shared Resources)]
-    DAO[DAO Layer (Data Access Objects)]
+    UI["Client UI Layer<br/>(Web / CLI / API Consumer)"]
+    Controller["Controller Layer<br/>(Request Handling)"]
+    Service["Service Layer<br/>(Business Logic)"]
+    Domain["Domain Models<br/>Student · Professor · Course · Enrollment"]
+    Factory["Factory Pattern<br/>(Object Creation)"]
+    Strategy["Strategy Pattern<br/>(Business Rules)"]
+    Singleton["Singleton Pattern<br/>(Shared Resources)"]
+    DAO["DAO Layer<br/>(Data Access Objects)"]
     DB[(Relational Database)]
-    Config[Configuration Layer (Properties / Env)]
-    CI[CI/CD Pipeline (.gitlab-ci.yml)]
+    Config["Configuration Layer<br/>(Properties / Env)"]
+    CI["CI/CD Pipeline<br/>(.gitlab-ci.yml)"]
+
+    UI --> Controller
+    Controller --> Service
+    Service --> Factory
+    Service --> Strategy
+    Factory --> Domain
+    Strategy --> Domain
+    Service --> DAO
+    DAO --> DB
+    Config --> Service
+    Config --> DAO
+    Singleton --> Service
+    Singleton --> DAO
+    CI --> Controller
+    CI --> Service
+    CI --> DAO
+
 ```
 ---
 
