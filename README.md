@@ -1,6 +1,6 @@
-# 🎓 University Management System — FAANG-Grade Backend Architecture
+# 🎓 University Management System —  Backend Architecture
 
-A production-inspired University Management System built to demonstrate enterprise backend architecture, classic design patterns, and systems-level thinking aligned with FAANG / Big Tech engineering standards.
+A production-inspired University Management System built to demonstrate enterprise backend architecture, classic design patterns, and systems-level thinking aligned with engineering standards.
 
 This project intentionally goes beyond CRUD to showcase how real-world backend systems are designed, executed, and maintained at scale.
 
@@ -30,7 +30,7 @@ This system follows principles used in large-scale backend systems:
 
 ---
 
-## 🏗️ High-Level System Architecture (Mermaid)
+## 🏗️ High-Level System Architecture
 ``` mermaid
 flowchart TB
     UI["Client UI Layer<br/>(CLI)"]
