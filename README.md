@@ -33,7 +33,7 @@ This system follows principles used in large-scale backend systems:
 ## 🏗️ High-Level System Architecture (Mermaid)
 ``` mermaid
 flowchart TB
-    UI["Client UI Layer<br/>(Web / CLI / API Consumer)"]
+    UI["Client UI Layer<br/>(CLI)"]
     Controller["Controller Layer<br/>(Request Handling)"]
     Service["Service Layer<br/>(Business Logic)"]
     Domain["Domain Models<br/>Student · Professor · Course · Enrollment"]
