@@ -44,22 +44,6 @@ flowchart TB
     DB[(Relational Database)]
     Config[Configuration Layer (Properties / Env)]
     CI[CI/CD Pipeline (.gitlab-ci.yml)]
-
-    UI --> Controller
-    Controller --> Service
-    Service --> Factory
-    Service --> Strategy
-    Factory --> Domain
-    Strategy --> Domain
-    Service --> DAO
-    DAO --> DB
-    Config --> Service
-    Config --> DAO
-    Singleton --> Service
-    Singleton --> DAO
-    CI --> Controller
-    CI --> Service
-    CI --> DAO
 ```
 ---
 
