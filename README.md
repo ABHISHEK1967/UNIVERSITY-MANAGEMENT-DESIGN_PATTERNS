@@ -31,7 +31,7 @@ This system follows principles used in large-scale backend systems:
 ---
 
 ## 🏗️ High-Level System Architecture (Mermaid)
-
+``` mermaid
 flowchart TB
     UI[Client / UI Layer (Web / CLI / API Consumer)]
     Controller[Controller Layer (Request Handling)]
@@ -60,11 +60,11 @@ flowchart TB
     CI --> Controller
     CI --> Service
     CI --> DAO
-
+```
 ---
 
 ## 🔄 End-to-End Execution Flow (Request Lifecycle)
-
+``` mermaid
 sequenceDiagram
     participant User
     participant UI
@@ -92,7 +92,7 @@ sequenceDiagram
     Service-->>Controller: Response DTO
     Controller-->>UI: Final Response
     UI-->>User: Output
-
+```
 ---
 
 ## 📦 Layer-by-Layer Breakdown
